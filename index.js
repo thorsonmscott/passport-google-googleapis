@@ -61,7 +61,6 @@ util.inherits(GoogleAPIsStrategy, passport.Strategy);
 // pass() - don't make a success or fail decision (shouldn't use)
 // error(err) - internal error during authentication
 GoogleAPIsStrategy.prototype.authenticate = function(req, options) {
-  console.log('AUTHENTICATE_START', this);
 
   // Set options to empty if not supplied
   options = options || {};
